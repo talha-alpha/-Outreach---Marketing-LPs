@@ -2,19 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=basement-grotesque@400,700&display=swap');
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
-  
   body {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Basement Grotesque', sans-serif;
   }
 }
 
 @layer components {
+  .border-gradient {
+  border-image-source: linear-gradient(
+    113.54deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.08) 8.07%
+  );
+  border-width: 1px;
+  border-style: solid;
+  border-image-slice: 1;
+}
+
+
   .btn-primary {
     background-color: #0284c7;
     color: white;

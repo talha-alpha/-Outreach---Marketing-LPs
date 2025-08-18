@@ -9,6 +9,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-white text-dark-900 antialiased">
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=basement-grotesque@400,700&display=swap"
+          rel="stylesheet"
+        />
         {children}
       </body>
     </html>
