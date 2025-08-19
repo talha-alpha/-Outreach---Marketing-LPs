@@ -111,7 +111,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="w-full sm:w-auto sm:max-w-[102px] items-center bg-neutral-50 text-neutral-950 text-sm font-medium leading-[140%] uppercase px-6 py-2 rounded-lg font-archivo cursor-pointer self-center"
+            className="w-full sm:w-auto sm:max-w-[102px] items-center bg-neutral-50 hover:bg-emerald-800 hover:text-white text-neutral-950 text-sm font-medium leading-[140%] uppercase px-6 py-2 rounded-lg font-archivo cursor-pointer self-center transition-all duration-300 ease-in-out"
           >
             Submit
           </button>
@@ -193,7 +193,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="w-full max-w-[102px] items-center bg-neutral-50 text-neutral-950 text-sm font-medium leading-[140%] uppercase px-6 py-2 rounded-lg font-archivo cursor-pointer"
+            className="w-full max-w-[102px] items-center bg-neutral-50 hover:bg-emerald-800 hover:text-white text-neutral-950 text-sm font-medium leading-[140%] uppercase px-6 py-2 rounded-lg font-archivo cursor-pointer transition-all duration-300 ease-in-out"
           >
             Submit
           </button>

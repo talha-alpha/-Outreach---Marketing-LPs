@@ -44,7 +44,7 @@ export default function Footer() {
       </div>
 
       {/* Desktop Layout - Original Styles */}
-      <div className="hidden lg:flex justify-between w-full max-w-[1440px] px-20 mx-auto">
+      <div className="hidden lg:flex lg:items-center justify-between w-full max-w-[1440px] px-20 mx-auto">
         <div className="flex justify-start">
           <a href="#hero" className="hover:opacity-80 ease-in-out duration-300">
             <svg
