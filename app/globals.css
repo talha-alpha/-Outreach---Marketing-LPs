@@ -2,29 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://api.fontshare.com/v2/css?f[]=basement-grotesque@400,700&display=swap');
+@font-face {
+  font-family: "Basement Grotesque";
+  src: url("/fonts/BasementGrotesque/BasementGrotesque-Black_v1.202.otf")
+    format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Basement Grotesque";
+  src: url("/fonts/BasementGrotesque/BasementGrotesque-Black_v1.202.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Basement Grotesque";
+  src: url("/fonts/BasementGrotesque/BasementGrotesque-Black_v1.202.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("/fonts/Archivo/Archivo-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("/fonts/Archivo/Archivo-Italic-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-display: swap;
+}
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   body {
-    font-family: 'Basement Grotesque', sans-serif;
+    font-family: "Basement Grotesque";
   }
 }
 
 @layer components {
   .border-gradient {
-  border-image-source: linear-gradient(
-    113.54deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(255, 255, 255, 0.08) 8.07%
-  );
-  border-width: 1px;
-  border-style: solid;
-  border-image-slice: 1;
-}
-
+    border-image-source: linear-gradient(
+      113.54deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.08) 8.07%
+    );
+    border-width: 1px;
+    border-style: solid;
+    border-image-slice: 1;
+  }
 
   .btn-primary {
     background-color: #0284c7;
@@ -34,11 +77,11 @@
     border-radius: 0.5rem;
     transition: all 0.2s;
   }
-  
+
   .btn-primary:hover {
     background-color: #0369a1;
   }
-  
+
   .btn-secondary {
     background-color: transparent;
     border: 2px solid #0284c7;
@@ -48,30 +91,30 @@
     border-radius: 0.5rem;
     transition: all 0.2s;
   }
-  
+
   .btn-secondary:hover {
     background-color: #0284c7;
     color: white;
   }
-  
+
   .section-padding {
     padding: 4rem 1rem;
   }
-  
+
   @media (min-width: 640px) {
     .section-padding {
       padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
-  
+
   @media (min-width: 1024px) {
     .section-padding {
       padding-left: 2rem;
       padding-right: 2rem;
     }
   }
-  
+
   .container-custom {
     max-width: 80rem;
     margin-left: auto;
@@ -85,5 +128,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+  .font-display {
+    @apply font-grotesque;
+  }
+  .font-body {
+    @apply font-archivo;
   }
 }
