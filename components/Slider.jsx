@@ -14,7 +14,7 @@ export default function Silders() {
   ];
 
   return (
-    <section className="w-full bg-neutral-950 text-white py-12 font-archivo overflow-hidden">
+    <section className="w-full bg-neutral-950 text-white py-12 font-archivo overflow-hidden pb-custom">
       <div className="relative w-full max-w-[1440px] mx-auto overflow-hidden">
         <div className="marquee-track flex animate-marquee">
           {/* Duplicate the logos array to allow seamless looping */}
