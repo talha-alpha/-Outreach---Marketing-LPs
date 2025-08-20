@@ -66,7 +66,8 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="flex w-full max-w-[1280px] mx-auto mt-[32px] sm:mt-[40px] lg:mt-[52px] px-4 sm:px-6 lg:px-10 xl:px-20">
+          <div className="w-full max-w-[1440px] mx-auto">
+          <div className="flex w-full max-w-[1280px] mx-auto mt-[32px] sm:mt-[40px] lg:mt-[52px] px-4 sm:px-6 lg:px-10 xl:px-5">
             <div className="flex flex-col lg:flex-row justify-between w-full gap-8 lg:gap-0">
               <div className="flex flex-col gap-3 my-auto items-center w-full lg:max-w-[632px] h-full lg:max-h-[364px] text-center lg:text-left">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[56px] font-extrabold leading-[100%] uppercase font-grotesque tracking-tightest">
@@ -134,6 +135,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

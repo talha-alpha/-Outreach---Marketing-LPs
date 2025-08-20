@@ -41,7 +41,7 @@ export default function Contact() {
     >
       {/* Mobile/Tablet Layout */}
       <div className="flex flex-col w-full max-w-[1440px] gap-8 sm:gap-10 lg:hidden mx-auto text-center items-center">
-        <div className="w-full max-w-[610px] gap-4 text-center">
+        <div className="w-full max-w-[810px] gap-4 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-56 font-extrabold text-white font-grotesque uppercase leading-[110%] tracking-tightest">
             Ready to Outpace Your Competition?
           </h2>
@@ -52,81 +52,67 @@ export default function Contact() {
 
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col w-full max-w-[610px] bg-neutral-950 p-6 sm:p-8 lg:p-10 gap-8 sm:gap-10"
+          className="flex flex-col w-full xl:max-w-[610px] max-w-[350px] bg-neutral-950 p-10 gap-10"
         >
-          <div className="flex flex-col gap-6 bg-neutral-950">
-            <div className="relative">
+          <div class="w-full">
+            <div class="relative">
               <input
                 type="text"
                 id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                onFocus={() => handleFocus("name")}
-                onBlur={() => handleBlur("name")}
-                className="w-full px-3 sm:px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer text-sm sm:text-base"
-                required
+                class="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
+                placeholder="Name"
               />
-              <p
-                className={`absolute top-0 left-0 text-sm sm:text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
-                  focusedField === "name" || formData.name
-                    ? "opacity-0 pointer-events-none"
-                    : "text-white"
-                }`}
+              <label
+                for="name"
+                class="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
+             peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
+             peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
               >
                 Name
-              </p>
+              </label>
             </div>
-            <div className="relative">
+            </div>
+            <div class="w-full">
+            <div class="relative">
               <input
                 type="email"
                 id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                onFocus={() => handleFocus("email")}
-                onBlur={() => handleBlur("email")}
-                className="w-full px-3 sm:px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer text-sm sm:text-base"
-                required
+                class="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
+                placeholder="Email Address"
               />
-              <p
-                className={`absolute top-0 left-0 text-sm sm:text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
-                  focusedField === "email" || formData.email
-                    ? "opacity-0 pointer-events-none"
-                    : "text-neutral-200"
-                }`}
+              <label
+                for="email"
+                class="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
+             peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
+             peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
               >
-                Email
-              </p>
+                Email Address
+              </label>
             </div>
-            <div className="relative">
+            </div>
+            <div class="w-full">
+            <div class="relative">
               <textarea
-                id="challenge"
-                name="challenge"
-                value={formData.challenge}
-                onChange={handleChange}
-                onFocus={() => handleFocus("challenge")}
-                onBlur={() => handleBlur("challenge")}
-                rows={4}
-                className="w-full px-3 sm:px-4 py-2 sm:py-3 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer text-sm sm:text-base"
-                required
-              />
-
-              <p
-                className={`absolute top-0 left-0 text-sm sm:text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
-                  focusedField === "challenge" || formData.challenge
-                    ? "opacity-0 pointer-events-none"
-                    : "text-neutral-200"
-                }`}
+                id="message"
+                rows="4"
+                class="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
+                placeholder="What’s Bugging You..."
+              ></textarea>
+              <label
+                for="message"
+                class="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
+             peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
+             peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
               >
-                What's Bugging You...
-              </p>
+                What’s Bugging You...
+              </label>
             </div>
+            
           </div>
 
           <button
             type="submit"
-            className="w-full sm:w-auto sm:max-w-[102px] items-center bg-neutral-50 hover:bg-emerald-800 hover:text-white text-neutral-950 text-sm font-medium leading-[140%] uppercase px-6 py-2 rounded-lg font-archivo cursor-pointer self-center transition-all duration-300 ease-in-out"
+            className="w-full max-w-[102px] items-center bg-neutral-50 hover:bg-neutral-800 hover:text-white text-neutral-950 text-sm font-medium leading-[140%] uppercase px-6 py-2 rounded-lg font-archivo cursor-pointer transition-all duration-300 ease-in-out"
           >
             Submit
           </button>
@@ -148,74 +134,60 @@ export default function Contact() {
           onSubmit={handleSubmit}
           className="flex flex-col w-full xl:max-w-[610px] max-w-[350px] bg-neutral-950 p-10 gap-10"
         >
-          <div className="flex flex-col gap-6 bg-neutral-950">
-            <div className="relative">
+          <div class="w-full">
+            <div class="relative">
               <input
                 type="text"
                 id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                onFocus={() => handleFocus("name")}
-                onBlur={() => handleBlur("name")}
-                className="w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer"
-                required
+                class="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
+                placeholder="Name"
               />
-              <p
-                className={`absolute top-0 left-0 text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
-                  focusedField === "name" || formData.name
-                    ? "opacity-0 pointer-events-none"
-                    : "text-white"
-                }`}
+              <label
+                for="name"
+                class="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
+             peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
+             peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
               >
                 Name
-              </p>
+              </label>
             </div>
-            <div className="relative">
+            </div>
+            <div class="w-full">
+            <div class="relative">
               <input
                 type="email"
                 id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                onFocus={() => handleFocus("email")}
-                onBlur={() => handleBlur("email")}
-                className="w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer"
-                required
+                class="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
+                placeholder="Email Address"
               />
-              <p
-                className={`absolute top-0 left-0 text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
-                  focusedField === "email" || formData.email
-                    ? "opacity-0 pointer-events-none"
-                    : "text-neutral-200"
-                }`}
+              <label
+                for="email"
+                class="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
+             peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
+             peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
               >
-                Email
-              </p>
+                Email Address
+              </label>
             </div>
-            <div className="relative">
+            </div>
+            <div class="w-full">
+            <div class="relative">
               <textarea
-                id="challenge"
-                name="challenge"
-                value={formData.challenge}
-                onChange={handleChange}
-                onFocus={() => handleFocus("challenge")}
-                onBlur={() => handleBlur("challenge")}
-                rows={4}
-                className="w-full px-4 py-3 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer"
-                required
-              />
-
-              <p
-                className={`absolute top-0 left-0 text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
-                  focusedField === "challenge" || formData.challenge
-                    ? "opacity-0 pointer-events-none"
-                    : "text-neutral-200"
-                }`}
+                id="message"
+                rows="4"
+                class="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
+                placeholder="What’s Bugging You..."
+              ></textarea>
+              <label
+                for="message"
+                class="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
+             peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
+             peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
               >
-                What's Bugging You...
-              </p>
+                What’s Bugging You...
+              </label>
             </div>
+            
           </div>
 
           <button
