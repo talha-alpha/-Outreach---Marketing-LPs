@@ -56,10 +56,10 @@ export default function Problems() {
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="w-full max-w-[400px] p-4 sm:p-6 border-t border-neutral-800"
+              className="w-full lg:max-w-[400px] p-4 sm:p-6 border-t border-neutral-800"
             >
               {problem.image && (
-                <div className="mb-4 flex justify-center">
+                <div className="mb-4 flex justify-center lg:justify-start">
                   <Image
                     src={problem.image}
                     className="w-16 h-16 sm:w-18 sm:h-18 lg:w-18 lg:h-18 object-contain"
@@ -73,10 +73,10 @@ export default function Problems() {
                 <div className="mb-4 flex justify-center">{problem.icon}</div>
               )}
               <div className="flex flex-col gap-3">
-                <h3 className="w-full text-lg sm:text-xl lg:text-[24px] font-medium text-neutral-200 leading-[120%] font-archivo text-center md:text-left">
+                <h3 className="w-full text-lg sm:text-xl lg:text-[24px] font-medium text-neutral-200 leading-[120%] font-archivo text-center lg:text-left">
                   {problem.title}
                 </h3>
-                <p className="w-full text-sm sm:text-base font-medium text-neutral-400 leading-[120%] font-archivo text-center md:text-left">
+                <p className="w-full text-sm sm:text-base font-medium text-neutral-400 leading-[120%] font-archivo text-center lg:text-left">
                   {problem.description}
                 </p>
               </div>
@@ -90,7 +90,7 @@ export default function Problems() {
               These Were Big Problems. Until They Weren't.
             </h3>
             <div className="flex justify-center w-full px-4 sm:px-0">
-              <button className="flex justify-center items-center w-full max-w-[200px] sm:max-w-[228px] h-full min-h-[40px] sm:min-h-[48px] px-4 sm:px-6 py-2 text-sm bg-neutral-50 text-neutral-950 hover:text-neutral-50 hover:bg-neutral-950 ease-in-out duration-500 rounded-md font-archivo">
+              <button className="flex justify-center items-center w-full max-w-[200px] sm:max-w-[228px] h-full min-h-[40px] sm:min-h-[48px] px-4 sm:px-6 py-2 text-sm bg-neutral-50 text-neutral-950 hover:text-neutral-50 hover:bg-neutral-950 ease-in-out duration-500 rounded-md font-archivo uppercase">
                 Let's talk about yours
               </button>
             </div>

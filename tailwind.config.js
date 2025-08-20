@@ -55,10 +55,10 @@ module.exports = {
         60: "60px",
       },
       width: {
-        '564': '564px',
-        '700': '700px',
-        '848': '848px',
-        '1280': '1280px',
+        564: "564px",
+        700: "700px",
+        848: "848px",
+        1280: "1280px",
       },
       backgroundImage: {
         "teal-gradient":

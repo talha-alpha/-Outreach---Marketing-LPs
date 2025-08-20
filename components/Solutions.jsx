@@ -4,36 +4,40 @@ export default function Solutions() {
   const solutions = [
     {
       title: "Find the Real Problem.",
-      description: "Your roadmap's not the issue. The roadblocks are. We take them apart piece by piece.",
+      description:
+        "Your roadmap's not the issue. The roadblocks are. We take them apart piece by piece.",
       image: "/images/SolutionSectionImgs/Container.png",
       width: 564,
       height: 312,
-      maxWidth: "max-w-[564px]"
+      maxWidth: "max-w-[564px]",
     },
     {
       title: "Follow the Friction.",
-      description: "Features are nice. Eliminating the pain points that stall revenue? Better.",
+      description:
+        "Features are nice. Eliminating the pain points that stall revenue? Better.",
       image: "/images/SolutionSectionImgs/Container (1).png",
       width: 700,
       height: 334,
-      maxWidth: "max-w-[700px]"
+      maxWidth: "max-w-[700px]",
     },
     {
       title: "Maximize Impact, Minimize Motion.",
-      description: "We hunt the smallest lever that flips the biggest outcomes.",
+      description:
+        "We hunt the smallest lever that flips the biggest outcomes.",
       image: "/images/SolutionSectionImgs/Container (2).png",
       width: 700,
       height: 334,
-      maxWidth: "max-w-[700px]"
+      maxWidth: "max-w-[700px]",
     },
     {
-      title: "Follow the Friction.",
-      description: "Features are nice. Eliminating the pain points that stall revenue? Better.",
+      title: "Plug Directly into Your Workflow..",
+      description:
+        "We move at your team’s speed, using your language, and blending seamlessly into your processes.",
       image: "/images/SolutionSectionImgs/Container (3).png",
       width: 564,
       height: 312,
-      maxWidth: "max-w-[564px]"
-    }
+      maxWidth: "max-w-[564px]",
+    },
   ];
 
   return (
@@ -45,11 +49,14 @@ export default function Solutions() {
           </h2>
         </div>
 
-        <div className="flex flex-col w-full max-w-[1280px] gap-4 mx-auto">
+        <div className="flex flex-col w-full max-w-[1280px] gap-4 lg:gap-2 xl:gap-4 mx-auto">
           {/* First Row */}
-          <div className="flex flex-col lg:flex-row gap-4">
+          <div className="flex flex-col lg:flex-row gap-4 lg:gap-2 xl:gap-4">
             {solutions.slice(0, 2).map((solution, index) => (
-              <div key={index} className="flex flex-col w-full bg-[linear-gradient(180deg,_rgba(255,255,255,0)_0%,_rgba(255,255,255,0.03)_100%)] border border-neutral-900 rounded-2xl">
+              <div
+                key={index}
+                className={`flex flex-col max-w-full xl:${solution.maxWidth} bg-[linear-gradient(180deg,_rgba(255,255,255,0)_0%,_rgba(255,255,255,0.03)_100%)] border border-neutral-900 rounded-2xl`}
+              >
                 <div className="flex flex-col gap-4 p-6 sm:p-8 lg:p-10">
                   <p className="flex text-neutral-50 text-lg sm:text-xl lg:text-2xl font-semibold leading[100%] font-archivo">
                     {solution.title}
@@ -70,11 +77,14 @@ export default function Solutions() {
               </div>
             ))}
           </div>
-          
+
           {/* Second Row */}
-          <div className="flex flex-col lg:flex-row gap-4">
+          <div className="flex flex-col lg:flex-row gap-4 lg:gap-2 xl:gap-4">
             {solutions.slice(2, 4).map((solution, index) => (
-              <div key={index + 2} className="flex flex-col w-full bg-[linear-gradient(180deg,_rgba(255,255,255,0)_0%,_rgba(255,255,255,0.03)_100%)] border border-neutral-900 rounded-2xl">
+              <div
+                key={index}
+                className={`flex flex-col max-w-full xl:${solution.maxWidth} bg-[linear-gradient(180deg,_rgba(255,255,255,0)_0%,_rgba(255,255,255,0.03)_100%)] border border-neutral-900 rounded-2xl`}
+              >
                 <div className="flex flex-col gap-4 p-6 sm:p-8 lg:p-10">
                   <p className="flex text-neutral-50 text-lg sm:text-xl lg:text-2xl font-semibold leading[100%] font-archivo">
                     {solution.title}

@@ -6,19 +6,20 @@ export default function Metrics() {
       title: "Uptime",
       beforeValue: "91.8%",
       afterValue: "99.9%",
-      description: "Stable across xyz client platforms"
+      description: "Stable across xyz client platforms",
     },
     {
       title: "Onboarding",
       beforeValue: "2 months",
       afterValue: "48 hours",
-      description: "Guided experience - empty support tickets"
+      description: "Guided experience - empty support tickets",
     },
     {
       title: "Infrastructure Expense",
       beforeValue: "100%",
       afterValue: "45%",
-      description: "Legacy stack restructured with modular services. Better performance"
+      description:
+        "Legacy stack restructured with modular services. Better performance",
     },
     {
       title: "Client Load Times",
@@ -26,8 +27,8 @@ export default function Metrics() {
       beforeUnit: "Secs",
       afterValue: "<2",
       afterUnit: "Secs",
-      description: "Across all product and catalog pages"
-    }
+      description: "Across all product and catalog pages",
+    },
   ];
 
   return (

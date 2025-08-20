@@ -35,7 +35,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="flex justify-center items-center w-full h-full min-h-[700px] bg-neutral-950 mx-auto px-4 md:px-8 lg:px-20 bg-[url('/backgrounds/holographic-background.png')] bg-cover bg-center">
+    <section
+      id="contact"
+      className="flex justify-center items-center w-full h-full min-h-[700px] bg-neutral-950 mx-auto px-4 md:px-8 lg:px-20 bg-[url('/backgrounds/holographic-background.png')] bg-cover bg-center"
+    >
       {/* Mobile/Tablet Layout */}
       <div className="flex flex-col w-full max-w-[1440px] gap-8 sm:gap-10 lg:hidden mx-auto text-center items-center">
         <div className="w-full max-w-[610px] gap-4 text-center">
@@ -64,9 +67,13 @@ export default function Contact() {
                 className="w-full px-3 sm:px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer text-sm sm:text-base"
                 required
               />
-              <p className={`absolute top-0 left-0 text-sm sm:text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
-                focusedField === "name" || formData.name ? 'opacity-0 pointer-events-none' : 'text-white'
-              }`}>
+              <p
+                className={`absolute top-0 left-0 text-sm sm:text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
+                  focusedField === "name" || formData.name
+                    ? "opacity-0 pointer-events-none"
+                    : "text-white"
+                }`}
+              >
                 Name
               </p>
             </div>
@@ -82,9 +89,13 @@ export default function Contact() {
                 className="w-full px-3 sm:px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer text-sm sm:text-base"
                 required
               />
-              <p className={`absolute top-0 left-0 text-sm sm:text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
-                focusedField === "email" || formData.email ? 'opacity-0 pointer-events-none' : 'text-neutral-200'
-              }`}>
+              <p
+                className={`absolute top-0 left-0 text-sm sm:text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
+                  focusedField === "email" || formData.email
+                    ? "opacity-0 pointer-events-none"
+                    : "text-neutral-200"
+                }`}
+              >
                 Email
               </p>
             </div>
@@ -101,9 +112,13 @@ export default function Contact() {
                 required
               />
 
-              <p className={`absolute top-0 left-0 text-sm sm:text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
-                focusedField === "challenge" || formData.challenge ? 'opacity-0 pointer-events-none' : 'text-neutral-200'
-              }`}>
+              <p
+                className={`absolute top-0 left-0 text-sm sm:text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
+                  focusedField === "challenge" || formData.challenge
+                    ? "opacity-0 pointer-events-none"
+                    : "text-neutral-200"
+                }`}
+              >
                 What's Bugging You...
               </p>
             </div>
@@ -119,9 +134,9 @@ export default function Contact() {
       </div>
 
       {/* Desktop Layout - Original Styles */}
-      <div className="hidden lg:flex justify-between w-full max-w-[1440px] px-20 mx-auto">
-        <div className="w-full max-w-[610px] gap-4">
-          <h2 className="text-56 font-extrabold text-white font-grotesque uppercase leading-[110%] tracking-tightest">
+      <div className="hidden lg:flex justify-between w-full max-w-[1440px] gap-3 2xl:gap-0 xl:px-20 mx-auto">
+        <div className="flex flex-col w-full xl:max-w-[610px] max-w-[350px] gap-4">
+          <h2 className="xl:text-56 text-4xl font-extrabold text-white font-grotesque uppercase leading-[110%] tracking-tightest">
             Ready to Outpace Your Competition?
           </h2>
           <p className="flex text-base font-normal text-neutral-400 leading-[140%] font-archivo">
@@ -131,7 +146,7 @@ export default function Contact() {
 
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col w-full max-w-[610px] bg-neutral-950 p-10 gap-10"
+          className="flex flex-col w-full xl:max-w-[610px] max-w-[350px] bg-neutral-950 p-10 gap-10"
         >
           <div className="flex flex-col gap-6 bg-neutral-950">
             <div className="relative">
@@ -146,9 +161,13 @@ export default function Contact() {
                 className="w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer"
                 required
               />
-              <p className={`absolute top-0 left-0 text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
-                focusedField === "name" || formData.name ? 'opacity-0 pointer-events-none' : 'text-white'
-              }`}>
+              <p
+                className={`absolute top-0 left-0 text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
+                  focusedField === "name" || formData.name
+                    ? "opacity-0 pointer-events-none"
+                    : "text-white"
+                }`}
+              >
                 Name
               </p>
             </div>
@@ -164,9 +183,13 @@ export default function Contact() {
                 className="w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer"
                 required
               />
-              <p className={`absolute top-0 left-0 text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
-                focusedField === "email" || formData.email ? 'opacity-0 pointer-events-none' : 'text-neutral-200'
-              }`}>
+              <p
+                className={`absolute top-0 left-0 text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
+                  focusedField === "email" || formData.email
+                    ? "opacity-0 pointer-events-none"
+                    : "text-neutral-200"
+                }`}
+              >
                 Email
               </p>
             </div>
@@ -183,9 +206,13 @@ export default function Contact() {
                 required
               />
 
-              <p className={`absolute top-0 left-0 text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
-                focusedField === "challenge" || formData.challenge ? 'opacity-0 pointer-events-none' : 'text-neutral-200'
-              }`}>
+              <p
+                className={`absolute top-0 left-0 text-base text-normal leading-[120%] font-archivo transition-all duration-300 ${
+                  focusedField === "challenge" || formData.challenge
+                    ? "opacity-0 pointer-events-none"
+                    : "text-neutral-200"
+                }`}
+              >
                 What's Bugging You...
               </p>
             </div>
@@ -193,7 +220,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="w-full max-w-[102px] items-center bg-neutral-50 hover:bg-emerald-800 hover:text-white text-neutral-950 text-sm font-medium leading-[140%] uppercase px-6 py-2 rounded-lg font-archivo cursor-pointer transition-all duration-300 ease-in-out"
+            className="w-full max-w-[102px] items-center bg-neutral-50 hover:bg-neutral-800 hover:text-white text-neutral-950 text-sm font-medium leading-[140%] uppercase px-6 py-2 rounded-lg font-archivo cursor-pointer transition-all duration-300 ease-in-out"
           >
             Submit
           </button>
