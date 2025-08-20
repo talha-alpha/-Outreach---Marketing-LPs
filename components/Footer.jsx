@@ -6,7 +6,12 @@ export default function Footer() {
       {/* Mobile/Tablet Layout */}
       <div className="flex flex-col sm:flex-row justify-between items-center w-full max-w-[1440px] px-4 sm:px-6 md:px-8 lg:hidden mx-auto gap-4 sm:gap-0">
         <div className="flex justify-start">
-          <a href="#hero" className="hover:opacity-80 ease-in-out duration-300">
+          <a
+            href="#hero"
+            className="hover:opacity-80 ease-in-out duration-300 flex items-center gap-2 group"
+            aria-label="Return to top of page"
+            title="Return to top"
+          >
             <svg
               width="36"
               height="32"
@@ -14,26 +19,19 @@ export default function Footer() {
               viewBox="0 0 46 40"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
             >
-              <mask id="path-1-inside-1_139_793" fill="white">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M23 11.8306L10.0303 34.2334H16.9712L13.6763 40H0L22.7723 0.39604L23 0L23.2277 0.39604L46 40H32.3237L29.0288 34.2334H35.9697L23 11.8306Z"
-                />
-              </mask>
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M23 11.8306L10.0303 34.2334H16.9712L13.6763 40H0L22.7723 0.39604L23 0L23.2277 0.39604L46 40H32.3237L29.0288 34.2334H35.9697L23 11.8306Z"
                 fill="white"
               />
-              <path
-                d="M23 11.8306L888.432 -489.196L23 -1984.07L-842.432 -489.196L23 11.8306ZM10.0303 34.2334L-855.401 -466.793L-1724.4 1034.23H10.0303V34.2334ZM16.9712 34.2334L885.23 530.345L1740.09 -965.767H16.9712V34.2334ZM13.6763 40V1040H594.02L881.935 536.111L13.6763 40ZM0 40L-866.906 -458.471L-1728.53 1040H0V40ZM22.7723 0.39604L889.679 498.867L889.679 498.866L22.7723 0.39604ZM23 0L889.907 -498.47L23 -2006.14L-843.907 -498.47L23 0ZM23.2277 0.39604L-843.679 498.866L-843.679 498.867L23.2277 0.39604ZM46 40V1040H1774.53L912.906 -458.471L46 40ZM32.3237 40L-835.935 536.111L-548.02 1040H32.3237V40ZM29.0288 34.2334V-965.767H-1694.09L-839.23 530.345L29.0288 34.2334ZM35.9697 34.2334V1034.23H1770.4L901.401 -466.793L35.9697 34.2334ZM23 11.8306L-842.432 -489.196L-855.401 -466.793L10.0303 34.2334L875.462 535.26L888.432 512.857L23 11.8306ZM10.0303 34.2334V1034.23H16.9712V34.2334V-965.767H10.0303V34.2334ZM16.9712 34.2334L-851.288 -461.878L-854.583 -456.111L13.6763 40L881.935 536.111L885.23 530.345L16.9712 34.2334ZM13.6763 40V-960H0V40V1040H13.6763V40ZM0 40L866.906 538.471L889.679 498.867L22.7723 0.39604L-844.134 -498.075L-866.906 -458.471L0 40ZM22.7723 0.39604L889.679 498.866L889.907 498.47L23 0L-843.907 -498.47L-844.135 -498.074L22.7723 0.39604ZM23 0L-843.907 498.47L-843.679 498.866L23.2277 0.39604L890.135 -498.074L889.907 -498.47L23 0ZM23.2277 0.39604L-843.679 498.867L-820.906 538.471L46 40L912.906 -458.471L890.134 -498.075L23.2277 0.39604ZM46 40V-960H32.3237V40V1040H46V40ZM32.3237 40L900.583 -456.111L897.288 -461.878L29.0288 34.2334L-839.23 530.345L-835.935 536.111L32.3237 40ZM29.0288 34.2334V1034.23H35.9697V34.2334V-965.767H29.0288 34.2334ZM35.9697 34.2334L901.401 -466.793L888.432 -489.196L23 11.8306L-842.432 512.857L-829.462 535.26L35.9697 34.2334Z"
-                fill="white"
-                mask="url(#path-1-inside-1_139_793)"
-              />
             </svg>
+            <span className="text-sm font-medium text-white group-hover:text-neutral-300 transition-colors duration-300">
+              Back to Top
+            </span>
           </a>
         </div>
         <div className="flex justify-center sm:justify-end">
@@ -46,33 +44,31 @@ export default function Footer() {
       {/* Desktop Layout - Original Styles */}
       <div className="hidden lg:flex lg:items-center justify-between w-full max-w-[1440px] px-20 mx-auto">
         <div className="flex justify-start">
-          <a href="#hero" className="hover:opacity-80 ease-in-out duration-300">
+          <a
+            href="#hero"
+            className="hover:opacity-80 ease-in-out duration-300 flex items-center gap-3 group"
+            aria-label="Return to top of page"
+            title="Return to top"
+          >
             <svg
               width="46"
               height="40"
               viewBox="0 0 46 40"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
             >
-              <mask id="path-1-inside-1_139_793" fill="white">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M23 11.8306L10.0303 34.2334H16.9712L13.6763 40H0L22.7723 0.39604L23 0L23.2277 0.39604L46 40H32.3237L29.0288 34.2334H35.9697L23 11.8306Z"
-                />
-              </mask>
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M23 11.8306L10.0303 34.2334H16.9712L13.6763 40H0L22.7723 0.39604L23 0L23.2277 0.39604L46 40H32.3237L29.0288 34.2334H35.9697L23 11.8306Z"
                 fill="white"
               />
-              <path
-                d="M23 11.8306L888.432 -489.196L23 -1984.07L-842.432 -489.196L23 11.8306ZM10.0303 34.2334L-855.401 -466.793L-1724.4 1034.23H10.0303V34.2334ZM16.9712 34.2334L885.23 530.345L1740.09 -965.767H16.9712V34.2334ZM13.6763 40V1040H594.02L881.935 536.111L13.6763 40ZM0 40L-866.906 -458.471L-1728.53 1040H0V40ZM22.7723 0.39604L889.679 498.867L889.679 498.866L22.7723 0.39604ZM23 0L889.907 -498.47L23 -2006.14L-843.907 -498.47L23 0ZM23.2277 0.39604L-843.679 498.866L-843.679 498.867L23.2277 0.39604ZM46 40V1040H1774.53L912.906 -458.471L46 40ZM32.3237 40L-835.935 536.111L-548.02 1040H32.3237V40ZM29.0288 34.2334V-965.767H-1694.09L-839.23 530.345L29.0288 34.2334ZM35.9697 34.2334V1034.23H1770.4L901.401 -466.793L35.9697 34.2334ZM23 11.8306L-842.432 -489.196L-855.401 -466.793L10.0303 34.2334L875.462 535.26L888.432 512.857L23 11.8306ZM10.0303 34.2334V1034.23H16.9712V34.2334V-965.767H10.0303V34.2334ZM16.9712 34.2334L-851.288 -461.878L-854.583 -456.111L13.6763 40L881.935 536.111L885.23 530.345L16.9712 34.2334ZM13.6763 40V-960H0V40V1040H13.6763V40ZM0 40L866.906 538.471L889.679 498.867L22.7723 0.39604L-844.134 -498.075L-866.906 -458.471L0 40ZM22.7723 0.39604L889.679 498.866L889.907 498.47L23 0L-843.907 -498.47L-844.135 -498.074L22.7723 0.39604ZM23 0L-843.907 498.47L-843.679 498.866L23.2277 0.39604L890.135 -498.074L889.907 -498.47L23 0ZM23.2277 0.39604L-843.679 498.867L-820.906 538.471L46 40L912.906 -458.471L890.134 -498.075L23.2277 0.39604ZM46 40V-960H32.3237V40V1040H46V40ZM32.3237 40L900.583 -456.111L897.288 -461.878L29.0288 34.2334L-839.23 530.345L-835.935 536.111L32.3237 40ZM29.0288 34.2334V1034.23H35.9697V34.2334V-965.767H29.0288 34.2334ZM35.9697 34.2334L901.401 -466.793L888.432 -489.196L23 11.8306L-842.432 512.857L-829.462 535.26L35.9697 34.2334Z"
-                fill="white"
-                mask="url(#path-1-inside-1_139_793)"
-              />
             </svg>
+            <span className="text-base font-medium text-white group-hover:text-neutral-300 transition-colors duration-300">
+              Back to Top
+            </span>
           </a>
         </div>
         <div className="flex justify-end">

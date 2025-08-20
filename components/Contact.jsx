@@ -71,8 +71,8 @@ export default function Contact() {
                 Name
               </label>
             </div>
-            </div>
-            <div class="w-full">
+          </div>
+          <div class="w-full">
             <div class="relative">
               <input
                 type="email"
@@ -89,8 +89,8 @@ export default function Contact() {
                 Email Address
               </label>
             </div>
-            </div>
-            <div class="w-full">
+          </div>
+          <div class="w-full">
             <div class="relative">
               <textarea
                 id="message"
@@ -107,7 +107,6 @@ export default function Contact() {
                 What’s Bugging You...
               </label>
             </div>
-            
           </div>
 
           <button
@@ -151,8 +150,8 @@ export default function Contact() {
                 Name
               </label>
             </div>
-            </div>
-            <div class="w-full">
+          </div>
+          <div class="w-full">
             <div class="relative">
               <input
                 type="email"
@@ -169,8 +168,8 @@ export default function Contact() {
                 Email Address
               </label>
             </div>
-            </div>
-            <div class="w-full">
+          </div>
+          <div class="w-full">
             <div class="relative">
               <textarea
                 id="message"
@@ -187,7 +186,6 @@ export default function Contact() {
                 What’s Bugging You...
               </label>
             </div>
-            
           </div>
 
           <button

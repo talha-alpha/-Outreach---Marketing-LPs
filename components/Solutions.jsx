@@ -24,7 +24,8 @@ export default function Solutions() {
     },
     {
       title: "Maximize Impact, Minimize Motion.",
-      description: "We hunt the smallest lever that flips the biggest outcomes.",
+      description:
+        "We hunt the smallest lever that flips the biggest outcomes.",
       image:
         "/images/SolutionSectionImgs/Container3-ezgif.com-png-to-webp-converter.webp",
       width: 700,
