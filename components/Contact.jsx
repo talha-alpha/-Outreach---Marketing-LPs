@@ -174,7 +174,7 @@ export default function Contact() {
               <textarea
                 id="message"
                 rows="4"
-                class="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
+                class="peer w-full px-4 py-2 resize-none font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
                 placeholder="What’s Bugging You..."
               ></textarea>
               <label

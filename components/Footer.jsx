@@ -29,9 +29,6 @@ export default function Footer() {
                 fill="white"
               />
             </svg>
-            <span className="text-sm font-medium text-white group-hover:text-neutral-300 transition-colors duration-300">
-              Back to Top
-            </span>
           </a>
         </div>
         <div className="flex justify-center sm:justify-end">
@@ -66,9 +63,6 @@ export default function Footer() {
                 fill="white"
               />
             </svg>
-            <span className="text-base font-medium text-white group-hover:text-neutral-300 transition-colors duration-300">
-              Back to Top
-            </span>
           </a>
         </div>
         <div className="flex justify-end">
