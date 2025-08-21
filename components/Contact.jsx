@@ -54,55 +54,75 @@ export default function Contact() {
           onSubmit={handleSubmit}
           className="flex flex-col w-full xl:max-w-[610px] max-w-[350px] bg-neutral-950 p-10 gap-10"
         >
-          <div class="w-full">
-            <div class="relative">
+          {/* Name */}
+          <div className="w-full">
+            <div className="relative">
               <input
                 type="text"
                 id="name"
-                class="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                onFocus={() => handleFocus("name")}
+                onBlur={() => handleBlur("name")}
+                className="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
                 placeholder="Name"
               />
               <label
-                for="name"
-                class="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
-             peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
-             peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
+                htmlFor="name"
+                className="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
+                  peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
+                  peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
               >
                 Name
               </label>
             </div>
           </div>
-          <div class="w-full">
-            <div class="relative">
+
+          {/* Email */}
+          <div className="w-full">
+            <div className="relative">
               <input
                 type="email"
                 id="email"
-                class="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                onFocus={() => handleFocus("email")}
+                onBlur={() => handleBlur("email")}
+                className="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
                 placeholder="Email Address"
               />
               <label
-                for="email"
-                class="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
-             peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
-             peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
+                htmlFor="email"
+                className="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
+                  peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
+                  peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
               >
                 Email Address
               </label>
             </div>
           </div>
-          <div class="w-full">
-            <div class="relative">
+
+          {/* Message */}
+          <div className="w-full">
+            <div className="relative">
               <textarea
                 id="message"
+                name="message"
                 rows="4"
-                class="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
+                value={formData.challenge}
+                onChange={handleChange}
+                onFocus={() => handleFocus("challenge")}
+                onBlur={() => handleBlur("challenge")}
+                className="peer w-full px-4 py-2 resize-none font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
                 placeholder="What’s Bugging You..."
-              ></textarea>
+              />
               <label
-                for="message"
-                class="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
-             peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
-             peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
+                htmlFor="message"
+                className="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
+                  peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
+                  peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
               >
                 What’s Bugging You...
               </label>
@@ -118,7 +138,7 @@ export default function Contact() {
         </form>
       </div>
 
-      {/* Desktop Layout - Original Styles */}
+      {/* Desktop Layout */}
       <div className="hidden lg:flex justify-between w-full max-w-[1440px] gap-3 2xl:gap-0 xl:px-20 mx-auto">
         <div className="flex flex-col w-full xl:max-w-[610px] max-w-[350px] gap-4">
           <h2 className="xl:text-56 text-4xl font-extrabold text-white font-grotesque uppercase leading-[110%] tracking-tightest">
@@ -133,55 +153,75 @@ export default function Contact() {
           onSubmit={handleSubmit}
           className="flex flex-col w-full xl:max-w-[610px] max-w-[350px] bg-neutral-950 p-10 gap-10"
         >
-          <div class="w-full">
-            <div class="relative">
+          {/* Name */}
+          <div className="w-full">
+            <div className="relative">
               <input
                 type="text"
                 id="name"
-                class="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                onFocus={() => handleFocus("name")}
+                onBlur={() => handleBlur("name")}
+                className="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
                 placeholder="Name"
               />
               <label
-                for="name"
-                class="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
-             peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
-             peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
+                htmlFor="name"
+                className="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
+                  peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
+                  peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
               >
                 Name
               </label>
             </div>
           </div>
-          <div class="w-full">
-            <div class="relative">
+
+          {/* Email */}
+          <div className="w-full">
+            <div className="relative">
               <input
                 type="email"
                 id="email"
-                class="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                onFocus={() => handleFocus("email")}
+                onBlur={() => handleBlur("email")}
+                className="peer w-full px-4 py-2 font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
                 placeholder="Email Address"
               />
               <label
-                for="email"
-                class="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
-             peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
-             peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
+                htmlFor="email"
+                className="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
+                  peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
+                  peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
               >
                 Email Address
               </label>
             </div>
           </div>
-          <div class="w-full">
-            <div class="relative">
+
+          {/* Message */}
+          <div className="w-full">
+            <div className="relative">
               <textarea
                 id="message"
+                name="challenge"
                 rows="4"
-                class="peer w-full px-4 py-2 resize-none font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
+                value={formData.challenge}
+                onChange={handleChange}
+                onFocus={() => handleFocus("challenge")}
+                onBlur={() => handleBlur("challenge")}
+                className="peer w-full px-4 py-2 resize-none font-archivo text-neutral-200 bg-neutral-950 border-b border-neutral-800 focus-visible:outline-none focus-visible:ring-0 cursor-pointer placeholder-transparent"
                 placeholder="What’s Bugging You..."
-              ></textarea>
+              />
               <label
-                for="message"
-                class="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
-             peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
-             peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
+                htmlFor="message"
+                className="pointer-events-none absolute left-0 -top-3.5 text-neutral-300 text-base transition-all font-archivo
+                  peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:top-2 
+                  peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-white"
               >
                 What’s Bugging You...
               </label>

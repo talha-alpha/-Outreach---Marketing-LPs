@@ -41,7 +41,7 @@ export default function Problems() {
 
   return (
     <section className="bg-neutral-950">
-      <div className="px-4 sm:px-6 md:px-8 lg:px-0 py-8 sm:py-12 lg:py-16">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-0 py-8 sm:py-12 lg:py-0">
         <div className="text-center w-full max-w-[848px] mx-auto pb-8 sm:pb-12 md:pb-16 lg:pb-20">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 font-grotesque uppercase tracking-tightest">
             You've Seen These Problems. So Have We
@@ -52,7 +52,7 @@ export default function Problems() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 w-full max-w-[1280px] gap-6 sm:gap-8 md:gap-12 lg:gap-16 mx-auto pb-8 sm:pb-12 lg:pb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 w-full max-w-[1280px] gap-6 sm:gap-8 md:gap-12 lg:gap-16 mx-auto pb-8 sm:pb-12 lg:pb-custom">
           {problems.map((problem, index) => (
             <div
               key={index}
@@ -84,7 +84,7 @@ export default function Problems() {
           ))}
         </div>
 
-        <div className="w-full max-w-[1440px] mx-auto text-center px-4 sm:px-8 md:px-12 lg:px-20 gap-2.5 h-full pb-8 sm:pb-12 lg:pb-16">
+        <div className="w-full max-w-[1440px] mx-auto text-center px-4 sm:px-8 md:px-12 lg:px-20 gap-2.5 h-full pb-8 sm:pb-12 lg:pb-custom">
           <div className="flex flex-col items-center w-full max-w-[1280px] gap-6 sm:gap-8 rounded-lg bg-teal-gradient py-12 sm:py-16 h-full min-h-[200px] sm:min-h-[250px] lg:min-h-[280px]">
             <h3 className="flex items-center w-full max-w-[848px] mx-auto text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white uppercase font-grotesque px-4 sm:px-0">
               These Were Big Problems. Until They Weren't.

@@ -14,7 +14,7 @@ export default function Silders() {
   ];
 
   return (
-    <section className="w-full bg-neutral-950 text-white py-12 font-archivo overflow-hidden pb-custom">
+    <section className="w-full bg-neutral-950 text-white font-archivo overflow-hidden py-10 lg:py-custom">
       <div className="relative w-full max-w-[1440px] mx-auto overflow-hidden">
         {/* Left and Right fade overlays */}
         <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-neutral-950 to-transparent z-10 pointer-events-none" />
